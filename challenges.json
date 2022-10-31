@@ -11,7 +11,7 @@
   },
   {
     "type": "body",
-    "description": "Com as pernas paralelas e semiflexionadas, pressione o cotovelo em direção ao corpo, mantendo o brao esticado. Repita com o outro braço.",
+    "description": "Com as pernas paralelas e semiflexionadas, pressione o cotovelo em direção ao corpo, mantendo o braço esticado. Repita com o outro braço.",
     "amount": 20
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "type": "body",
-    "description": "Com as pernas paralelas e semiflexionadas, pressione o cotovelo em direção ao corpo, mantendo o brao esticado. Repita com o outro braço.",
+    "description": "Com as pernas paralelas e semiflexionadas, pressione o cotovelo em direção ao corpo, mantendo o braço esticado. Repita com o outro braço.",
     "amount": 36
   },
   {
@@ -58,5 +58,5 @@
     "type": "body",
     "description": "Mantenha as pernas bem afastadas e as pontas dos pés voltadas para fora. Desça o tronco para um dos lados até sentir uma leve tensão na parte posterior da coxa, Repita do outro ládo.",
     "amount": 61
-  },
+  }
 ]
