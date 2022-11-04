@@ -58,7 +58,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
   }, [])
 
   function setImage() {
-    setUsername(prompt("Digite seu username:"));
+    setUsername(prompt("Digite seu username do github:"));
   }
 
   useEffect(() => {
