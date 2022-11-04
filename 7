@@ -22,7 +22,6 @@ interface ChallengeContextData {
   resetChallenge: () => void;
   completeChallenge: () => void;
   closeLevelUpModal: () => void;
-  setImage: () => void;
   userName: string;
 
 }
@@ -32,7 +31,6 @@ interface ChallengesProviderProps {
   level: number;
   currentExperience: number;
   challengesCompleted: number;
-  userName: string;
 }
 
 
@@ -47,7 +45,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
   const [activeChallenge, setActiveChallenge] = useState(null);
 
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
-  const [userName, setUsername] = useState(rest.userName ?? "")
+  const [userName, setUsername] = useState("")
 
 
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
@@ -55,11 +53,11 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
   useEffect(() => {
     Notification.requestPermission();
+    if (userName != "") {
+      setUsername(prompt("Digite seu usuario do github: "));
+    }
   }, [])
 
-  function setImage() {
-    setUsername(prompt("Digite seu username:"));
-  }
 
   useEffect(() => {
     Cookies.set('level', String(level));
@@ -131,8 +129,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
         resetChallenge,
         completeChallenge,
         closeLevelUpModal,
-        userName,
-        setImage
+        userName
       }}>
       {children}
 
