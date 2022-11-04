@@ -10,7 +10,7 @@ export function Profile() {
     <div className={Style.profileContainer}>
       <img src={`https://github.com/${userName}.png`} alt=""  onClick={setImage}/>
       <div>
-        <strong onClick={setImage}>{userName}</strong>
+        <strong onClick={setImage}>{userName} </strong>
         <p>
           <img src='icons/level.svg' alt='Level' />
           Level {level}
